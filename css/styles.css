@@ -16,26 +16,39 @@
     --about-bg-color: #111821;
 }
 
-
-#main {
-    display: flex;
-    flex-direction: row;
+.main {
     color: var(--main-text-color);
+  
 }
 
 #barra_superior {
-    flex: auto;
-    min-height: 10vh;
-    background-color: var(--main-color);
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 10vh;
+
+    background-color: #111821;
     color: var(--main-text-color);
-    padding: 50px;
-    text-shadow: none;
+    border-top: #999;
+    border-width: 10px;
+    border-color: #999;
+   
+    border-bottom: 10px;
+}
+
+#button_act {
+    display: flex;
+    padding: 25px 30px;
 }
 
 #calc_container {
     flex: auto;
-    min-height: 90vh;
+    height: 95vh;
     background-color: var(--main-color);
     color: var(--main-text-color);
     padding: 50px;
+    border-width: 1px;
+    border-style: var(--border-color);
+    border-top: var(--border-color);
 }
